@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutOrderproduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp"
+    android:layout_margin="20dp"
+    android:background="@drawable/chuyen_item_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_SLQA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/quicksandregular"
+            android:textSize="20dp"
+            android:text="SL QA:"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/tv_SLSP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/quicksandregular"
+            android:text="Tổng SL:"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tongSLORprodcut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/quicksandregular"
+        android:textSize="20dp"
+        android:text="Tổng SL:"
+        android:layout_gravity="center"/>
+</LinearLayout>

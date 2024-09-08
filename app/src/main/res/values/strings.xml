@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PLP_APP</string>
+    <string-array name="dropdown_items">
+        <item>Chọn vai trò</item>
+        <item>Chuyền sản xuất</item>
+        <item>Kiểm tra chất lượng</item>
+        <item>Chuyền trưởng</item>
+        <item>Tổ trưởng QC</item>
+    </string-array>
+</resources>

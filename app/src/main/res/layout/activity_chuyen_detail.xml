@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chuyenbgr"
+    android:padding="20dp">
+
+    <ImageButton
+    android:id="@+id/back_buttonChuyen"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:src="@drawable/ic_back_arrow"
+    android:contentDescription="Back"
+    android:background="@android:color/transparent"
+    android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tv_productChuyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test0908"
+        android:textSize="18sp"
+        android:textColor="#f35d5d"
+        android:fontFamily="@font/quicksandbold"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_background"/>
+
+    <!-- SL Tổng: 1 TextView -->
+    <TextView
+        android:id="@+id/tv_sltong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SL tổng: 0"
+        android:textSize="18sp"
+        android:textColor="#f35d5d"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/quicksandbold"
+        android:background="@drawable/textview_background"/>
+
+    <TextView
+        android:id="@+id/tv_slChuyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng: 0"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/quicksandbold"
+        android:background="@drawable/textview_background"/>
+
+    <Button
+        android:id="@+id/btn_datlai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt lại"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF5252"
+        android:fontFamily="@font/quicksandbold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"/>
+
+    <RelativeLayout
+        android:id="@+id/spn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_datlai"
+        android:background="@drawable/spinner_background">
+        <TextView
+            android:id="@+id/spn_textlabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn công việc: "
+            android:fontFamily="@font/quicksandbold"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_choncongviec"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:spinnerMode="dialog"
+            android:layout_below="@id/spn_textlabel"
+            android:fontFamily="@font/quicksandbold"
+            android:background="@drawable/spinner_background"
+            android:minHeight="48dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:popupBackground="#FFFFFF"/>
+    </RelativeLayout>
+
+
+    <!-- Plus Button -->
+    <ImageButton
+        android:id="@+id/btn_plus"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/increasebtn"
+        android:contentDescription="Increase Quantity"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spn_layout"
+        android:background="@drawable/image_button_background"
+        android:layout_marginTop="10dp" />
+
+    <!-- Minus Button -->
+    <ImageButton
+        android:id="@+id/btn_minus"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/decreasebtn"
+        android:contentDescription="Decrease Quantity"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_plus"
+        android:background="@drawable/image_button_background"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
